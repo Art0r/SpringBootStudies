@@ -30,6 +30,8 @@ public class Demo1Application {
     @EventListener
     public void seed(ContextRefreshedEvent event) {
         Faker faker = new Faker();
+
+
         for (int i = 0; i < 10; i++) {
             Example example = new Example();
             String email = faker.internet().emailAddress();
